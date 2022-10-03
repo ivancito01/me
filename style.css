@@ -189,8 +189,8 @@ height: 100vh;
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #ff5080;
+    /*text-decoration: underline;
+    text-decoration-color: #ff5080;*/
     /*text-decoration-thickness: 5px;*/
 }
 #servicios .fila{
@@ -206,4 +206,126 @@ height: 100vh;
     margin: 0 5px;
     border-radius: 5px;
     transition: .5s ;
+}
+#servicios .fila .servicio:hover{
+    box-shadow: 5px 5px 10px rgba(22, 5, 48, 0.97),-5px -5px 10px rgba(22, 5, 48, 0.97)
+    /*box-shadow: 5px 5px 10px #ff5080,-5px -5px 10px #ff5080*/
+}
+#servicios .fila .servicio h4{
+    font-size:  22px;
+    margin-bottom: 25px;
+}
+#servicios .fila .servicio .icono{
+    display:  inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3;
+    padding: 20px;
+    margin-bottom: 25px; 
+}
+#servicios .fila .servicio hr{
+    width: 65%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#servicios .fila .servicio ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#servicios .fila .servicio p{
+    font-size: 14px;
+    line-height: 22px;
+}
+/*SECCION HABILIDADES*/
+.contenedor-skills{
+    background: linear-gradient(#865aebb4,rgba(33,16,16,.8)),url(img/skills.jpg);
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+.contenedor-skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+}
+.contenedor-skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill p{
+    color: #fff;
+    font-style: italic;
+}
+.porcentaje{
+    color: #fff;
+    font-size: 30px;
+}
+.contenedor-skills .skill p i{
+   /* display: grid ;*/
+    width: 10px;
+    height: 60px;
+    border-radius: 50%;
+    /*background-color: #d3d3;*/
+    padding: 0px;
+    color: rgb(37, 205, 211);
+    font-size: 40px;
+    margin-right: 40px;
+   /* margin-bottom: 25px; */
+}
+.contenedor-skills  .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: #ff95b2;
+    box-shadow: 5px 5px 10px #ff5080,-5px -5px 10px #ff5080;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+    
+}
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #ff95b2;
+    box-shadow: 5px 5px 10px #ff5080,-5px -5px 10px #ff5080;
+    width: 45%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #ff95b2;
+    box-shadow: 5px 5px 10px #ff5080,-5px -5px 10px #ff5080;
+    width: 65%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #ff95b2;
+    box-shadow: 5px 5px 10px #ff5080,-5px -5px 10px #ff5080;
+    width: 85%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+@keyframes progreso1{
+    0%{width: 0;}
+    100%{width: 95%;}
+}
+@keyframes progreso2{
+    0%{width: 0;}
+    100%{width: 45%;}
+}
+@keyframes progreso3{
+    0%{width: 0;}
+    100%{width: 65%;}
+}
+@keyframes progreso4{
+    0%{width: 0;}
+    100%{width: 85%;}
 }
