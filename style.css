@@ -68,7 +68,7 @@ height: 100vh;
 #inicio .contenido .presentacion{
     max-width: 1100px;
     height: 100vh;
-    margin: auto;
+    margin: 45px auto;
     color:#fff;
     display: flex;
     flex-direction: column;
